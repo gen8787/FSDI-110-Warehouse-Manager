@@ -14,4 +14,4 @@ class Product:
 
     def print(self):
         print(
-            f"ID: {self.id} | {self.name} | Category: {self.cat} | Stock: {self.stock} | Price: {self.price}")
+            f"ID: {self.id} | {self.name} | Category: {self.cat} | Stock: {self.stock} | Price: ${'{:,.2f}'.format(self.price)}")

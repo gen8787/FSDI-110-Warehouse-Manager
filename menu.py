@@ -11,10 +11,12 @@ def init():
     print("*" * 30)
     print("\n")
 
-    print("Menu:")
+    print("Main Menu:")
+    print("\n")
     print(" [1] Register Product")
     print(" [2] Print Catalog")
     print(" [q] Quit")
+    print("\n")
 
 
 # C L E A R   S C R E E N
