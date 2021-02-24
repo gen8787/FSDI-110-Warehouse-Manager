@@ -12,6 +12,10 @@ class Product:
         self.stock = stock
         self.price = price
 
+    def __str__(self):
+        return self.name
+
     def print(self):
-        print(
-            f"ID: {self.id} | {self.name} | Category: {self.cat} | Stock: {self.stock} | Price: ${'{:,.2f}'.format(self.price)}")
+        print(f"ID: {str(self.id).rjust(3)} | {self.name.ljust(20)} | Category: {self.cat.ljust(10)} | Stock: {str(self.stock).ljust(3)} | Price: ${'{:,.2f}'.format(self.price)}")
+
+# var.ljust(30)

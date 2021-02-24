@@ -15,6 +15,9 @@ def init():
     print("\n")
     print(" [1] Register Product")
     print(" [2] Print Catalog")
+    print(" [3] Report: Out of Stock")
+    print(" [4] Report: Stock Value")
+    print(" [5] Report: Cheapest Product")
     print(" [q] Quit")
     print("\n")
 
