@@ -25,8 +25,10 @@ def display_products():
     clear_screen()
     print_header("All Products:")
 
-    # print("ID".ljust(3)("Product Name").ljust(20)(
-    #     "Category").ljust(10)("Stock").ljust(3)("Price"))
+    print(" " + "ID |".ljust(0) + " Product".ljust(14) +
+          "| Category".ljust(15) + "| Stock ".ljust(4) + "| Price")
+    print("-" * 50)
+
     for prod in all_products:
         prod.print()
 

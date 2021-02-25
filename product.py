@@ -16,6 +16,4 @@ class Product:
         return self.name
 
     def print(self):
-        print(f"ID: {str(self.id).rjust(3)} | {self.name.ljust(20)} | Category: {self.cat.ljust(10)} | Stock: {str(self.stock).ljust(3)} | Price: ${'{:,.2f}'.format(self.price)}")
-
-# var.ljust(30)
+        print(f"{str(self.id).rjust(3)} | {self.name.ljust(12)} | {self.cat.ljust(12)} | {str(self.stock).ljust(5)} | ${'{:,.2f}'.format(self.price)}")
