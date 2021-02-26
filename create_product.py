@@ -23,7 +23,12 @@ def create_product():
         if (prod_stock < 0):
             print("*** Error: Stock cannot be less than 0 ***")
 
-        new_product = Product(1, prod_name, prod_cat, prod_stock, prod_price)
+        next_id = 1
+        if (len(all_products) > 0):
+            next_id = all_products[-1].id + 1
+
+        new_product = Product(next_id, prod_name,
+                              prod_cat, prod_stock, prod_price)
         all_products.append(new_product)
 
         print("adding product...")
